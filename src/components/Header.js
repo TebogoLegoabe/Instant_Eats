@@ -30,8 +30,8 @@ const Header = ({ isScrolled }) => {
             <li><a href="#testimonials" onClick={closeMenu}>Reviews</a></li>
             <li><a href="#footer" onClick={closeMenu}>About</a></li>
             <li className="auth-buttons">
-              <a href="tel:+27748373221" className="btn btn-light" onClick={closeMenu}>Login</a>
-              <a href="#app" className="btn" onClick={closeMenu}>Get Started</a>
+              <button className="btn btn-light" onClick={closeMenu}>Login</button>
+              <button className="btn" onClick={closeMenu}>Sign up</button>
             </li>
           </ul>
         </nav>
