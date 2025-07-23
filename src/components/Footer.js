@@ -19,9 +19,11 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: "fab fa-instagram", href: "https://www.instagram.com/instanteatsza" },
-    { icon: "fab fa-linkedin-in", href: "https://www.linkedin.com/company/instant-eats/" },
-    { icon: "fab fa-tiktok", href: "https://www.tiktok.com/@instanteatsza?_r=1&_d=ek8l046j7f76l9&sec_uid=MS4wLjABAAAAXJwyZeaOVg1CBZl6UNuz7Lg7rCBjGhJT3jIRtR_Q8ALw3HkE33fIp832YG8v-NAt&share_author_id=7148537898194420738&sharer_language=en&source=h5_m&u_code=e44db99abk2jik&ug_btm=b5836,b0&sec_user_id=MS4wLjABAAAAXJwyZeaOVg1CBZl6UNuz7Lg7rCBjGhJT3jIRtR_Q8ALw3HkE33fIp832YG8v-NAt&utm_source=copy&social_share_type=5&utm_campaign=client_share&utm_medium=ios&tt_from=copy&user_id=7148537898194420738&enable_checksum=1&share_link_id=40D9C57E-C368-40BC-A515-4A452953E087&share_app_id=1233" }
+    { icon: "fab fa-facebook-f", href: "https://www.facebook.com/share/1YKnAmQEp7/?mibextid=wwXIfr", type: "icon" },
+    { icon: "x-logo", href: "https://x.com/instanteatsza?s=11", type: "custom" },
+    { icon: "fab fa-instagram", href: "https://www.instagram.com/instanteatsza", type: "icon" },
+    { icon: "fab fa-linkedin-in", href: "https://www.linkedin.com/company/instant-eats/", type: "icon" },
+    { icon: "fab fa-tiktok", href: "https://www.tiktok.com/@instanteatsza?_r=1&_d=ek8l046j7f76l9&sec_uid=MS4wLjABAAAAXJwyZeaOVg1CBZl6UNuz7Lg7rCBjGhJT3jIRtR_Q8ALw3HkE33fIp832YG8v-NAt&share_author_id=7148537898194420738&sharer_language=en&source=h5_m&u_code=e44db99abk2jik&ug_btm=b5836,b0&sec_user_id=MS4wLjABAAAAXJwyZeaOVg1CBZl6UNuz7Lg7rCBjGhJT3jIRtR_Q8ALw3HkE33fIp832YG8v-NAt&utm_source=copy&social_share_type=5&utm_campaign=client_share&utm_medium=ios&tt_from=copy&user_id=7148537898194420738&enable_checksum=1&share_link_id=40D9C57E-C368-40BC-A515-4A452953E087&share_app_id=1233", type: "icon" }
   ];
 
   const contactInfo = [
@@ -43,7 +45,11 @@ const Footer = () => {
             <div className="social-links">
               {socialLinks.map((social, index) => (
                 <a key={index} href={social.href} target="_blank" rel="noopener noreferrer">
-                  <i className={social.icon}></i>
+                  {social.type === "custom" ? (
+                    <span className="x-logo-svg">X</span>
+                  ) : (
+                    <i className={social.icon}></i>
+                  )}
                 </a>
               ))}
             </div>
@@ -177,6 +183,7 @@ const Footer = () => {
         .social-links {
           display: flex;
           gap: 0.75rem;
+          flex-wrap: wrap;
         }
 
         .social-links a {
@@ -196,6 +203,16 @@ const Footer = () => {
           background: linear-gradient(135deg, var(--primary-yellow), var(--primary-orange));
           color: var(--primary-black);
           transform: translateY(-2px);
+        }
+
+        .x-logo-svg {
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+          font-size: 1.1rem;
+          font-weight: 900;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          letter-spacing: -0.05em;
         }
 
         .copyright-compact {
