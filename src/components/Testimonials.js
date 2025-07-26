@@ -9,7 +9,6 @@ const Testimonials = () => {
       response: "That's INSTANT eats for you 👌🔥Thank you for using instant eat Your continues support is highly appreciated 🙏",
       time: "17:45",
       type: "whatsapp",
-      
     },
     {
       id: 2,
@@ -189,18 +188,19 @@ const Testimonials = () => {
 
         .testimonial-slide {
           flex: 0 0 auto;
-          width: 380px;
+          width: 320px; /* reduced from 380px */
         }
 
         /* WhatsApp Card Styles */
         .whatsapp-card {
           background: #075e54;
-          border-radius: 15px;
+          border-radius: 12px; /* reduced */
           padding: 0;
           overflow: hidden;
-          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12); /* reduced */
           transform: rotate(-1deg);
           transition: transform 0.3s ease;
+          font-size: 0.85rem; /* reduced */
         }
 
         .whatsapp-card:hover {
@@ -209,7 +209,7 @@ const Testimonials = () => {
 
         .whatsapp-header {
           background: #128c7e;
-          padding: 1rem;
+          padding: 0.75rem; /* reduced */
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -219,18 +219,19 @@ const Testimonials = () => {
         .whatsapp-contact {
           display: flex;
           align-items: center;
-          gap: 0.75rem;
+          gap: 0.5rem; /* reduced */
         }
 
         .contact-avatar {
-          width: 40px;
-          height: 40px;
+          width: 32px; /* reduced */
+          height: 32px; /* reduced */
           background: rgba(255, 255, 255, 0.2);
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
           color: white;
+          font-size: 1rem; /* reduced */
         }
 
         .contact-info {
@@ -240,32 +241,32 @@ const Testimonials = () => {
 
         .contact-name {
           font-weight: 600;
-          font-size: 1rem;
+          font-size: 0.95rem; /* reduced */
         }
 
         .whatsapp-label {
-          font-size: 0.75rem;
+          font-size: 0.7rem; /* reduced */
           opacity: 0.8;
         }
 
         .whatsapp-icon {
-          font-size: 1.5rem;
+          font-size: 1.2rem; /* reduced */
           color: #25d366;
         }
 
         .payment-notification {
           background: linear-gradient(135deg, #4caf50, #45a049);
           color: white;
-          padding: 0.75rem 1rem;
+          padding: 0.5rem 0.75rem; /* reduced */
           display: flex;
           align-items: center;
-          gap: 0.5rem;
-          font-size: 0.9rem;
+          gap: 0.4rem; /* reduced */
+          font-size: 0.8rem; /* reduced */
         }
 
         .payment-icon {
-          width: 20px;
-          height: 20px;
+          width: 16px; /* reduced */
+          height: 16px; /* reduced */
           background: white;
           color: #4caf50;
           border-radius: 50%;
@@ -273,7 +274,7 @@ const Testimonials = () => {
           align-items: center;
           justify-content: center;
           font-weight: bold;
-          font-size: 0.75rem;
+          font-size: 0.65rem; /* reduced */
         }
 
         .chat-messages {
@@ -282,12 +283,12 @@ const Testimonials = () => {
             radial-gradient(circle at 20% 30%, rgba(37, 211, 102, 0.1) 2px, transparent 2px),
             radial-gradient(circle at 80% 70%, rgba(37, 211, 102, 0.08) 1px, transparent 1px);
           background-size: 30px 30px, 50px 50px;
-          padding: 1.5rem 1rem;
-          min-height: 200px;
+          padding: 1rem 0.75rem; /* reduced */
+          min-height: 140px; /* reduced */
         }
 
         .message {
-          margin-bottom: 1rem;
+          margin-bottom: 0.7rem; /* reduced */
           display: flex;
           flex-direction: column;
         }
@@ -299,12 +300,12 @@ const Testimonials = () => {
         .customer-message p {
           background: #262d31;
           color: white;
-          padding: 0.75rem 1rem;
-          border-radius: 18px 18px 18px 5px;
-          margin: 0 0 0.25rem 0;
+          padding: 0.5rem 0.8rem; /* reduced */
+          border-radius: 14px 14px 14px 5px; /* reduced */
+          margin: 0 0 0.2rem 0;
           max-width: 80%;
-          font-size: 0.9rem;
-          line-height: 1.4;
+          font-size: 0.85rem; /* reduced */
+          line-height: 1.3; /* reduced */
         }
 
         .business-message {
@@ -314,29 +315,30 @@ const Testimonials = () => {
         .business-message p {
           background: #005c4b;
           color: white;
-          padding: 0.75rem 1rem;
-          border-radius: 18px 18px 5px 18px;
-          margin: 0 0 0.25rem 0;
+          padding: 0.5rem 0.8rem; /* reduced */
+          border-radius: 14px 14px 5px 14px; /* reduced */
+          margin: 0 0 0.2rem 0;
           max-width: 80%;
-          font-size: 0.9rem;
-          line-height: 1.4;
+          font-size: 0.85rem; /* reduced */
+          line-height: 1.3; /* reduced */
         }
 
         .message-time {
-          font-size: 0.7rem;
+          font-size: 0.65rem; /* reduced */
           color: #8696a0;
-          margin: 0 0.5rem;
+          margin: 0 0.4rem; /* reduced */
         }
 
         /* Twitter Card Styles */
         .twitter-card {
           background: white;
           border: 1px solid #e1e8ed;
-          border-radius: 16px;
-          padding: 1.5rem;
+          border-radius: 12px; /* reduced */
+          padding: 1rem; /* reduced */
           transform: rotate(1deg);
           transition: transform 0.3s ease;
-          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.09); /* reduced */
+          font-size: 0.85rem; /* reduced */
         }
 
         .twitter-card:hover {
@@ -346,20 +348,20 @@ const Testimonials = () => {
         .twitter-header {
           display: flex;
           align-items: center;
-          gap: 0.75rem;
-          margin-bottom: 1rem;
+          gap: 0.5rem; /* reduced */
+          margin-bottom: 0.7rem; /* reduced */
         }
 
         .twitter-avatar {
-          width: 48px;
-          height: 48px;
+          width: 36px; /* reduced */
+          height: 36px; /* reduced */
           background: linear-gradient(135deg, #1da1f2, #0d8bd9);
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
           color: white;
-          font-size: 1.2rem;
+          font-size: 1rem; /* reduced */
         }
 
         .twitter-info {
@@ -369,53 +371,53 @@ const Testimonials = () => {
         .twitter-name {
           font-weight: 700;
           color: #14171a;
-          font-size: 0.95rem;
+          font-size: 0.9rem; /* reduced */
         }
 
         .twitter-handle {
           color: #657786;
-          font-size: 0.85rem;
+          font-size: 0.8rem; /* reduced */
         }
 
         .twitter-icon {
           color: #1da1f2;
-          font-size: 1.2rem;
+          font-size: 1rem; /* reduced */
         }
 
         .twitter-content p {
           color: #14171a;
-          font-size: 0.95rem;
-          line-height: 1.5;
-          margin: 0 0 1rem 0;
+          font-size: 0.9rem; /* reduced */
+          line-height: 1.4; /* reduced */
+          margin: 0 0 0.7rem 0; /* reduced */
         }
 
         .twitter-engagement {
           display: flex;
-          gap: 2rem;
-          padding-top: 0.75rem;
+          gap: 1.2rem; /* reduced */
+          padding-top: 0.5rem; /* reduced */
           border-top: 1px solid #e1e8ed;
         }
 
         .twitter-engagement span {
           display: flex;
           align-items: center;
-          gap: 0.5rem;
+          gap: 0.4rem; /* reduced */
           color: #657786;
-          font-size: 0.85rem;
+          font-size: 0.8rem; /* reduced */
         }
 
         .twitter-engagement i {
-          font-size: 0.9rem;
+          font-size: 0.8rem; /* reduced */
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
           .testimonials-track {
-            gap: 1rem;
+            gap: 0.7rem;
           }
 
           .testimonial-slide {
-            width: 320px;
+            width: 240px;
           }
 
           .whatsapp-card,
@@ -429,18 +431,18 @@ const Testimonials = () => {
           }
 
           .chat-messages {
-            min-height: 180px;
-            padding: 1rem 0.75rem;
+            min-height: 100px;
+            padding: 0.7rem 0.5rem;
           }
 
           .twitter-card {
-            padding: 1.25rem;
+            padding: 0.8rem;
           }
         }
 
         @media (max-width: 576px) {
           .testimonial-slide {
-            width: 280px;
+            width: 180px;
           }
 
           .testimonials-track {
