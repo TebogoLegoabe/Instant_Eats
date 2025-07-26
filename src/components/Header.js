@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = ({ isScrolled }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,9 +15,9 @@ const Header = ({ isScrolled }) => {
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container header-container">
-        <a href="#" className="logo">
+        <Link to="/" className="logo">
           Instant Eats
-        </a>
+        </Link>
 
         <div className="menu-toggle" onClick={toggleMenu}>
           <i className="fas fa-bars"></i>
